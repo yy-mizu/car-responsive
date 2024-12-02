@@ -1,0 +1,74 @@
+.buy-car-section {
+    height: 60vh;
+    background-color: rgb(246, 246, 246);
+    padding: 60px 0rem;
+}
+
+.buy-car-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.buy-car-card {
+    padding: 40px;
+    background: #fff;
+    text-align: left;
+}
+
+.buy-car-card:last-child {
+    background: #dc3545;
+    color: #fff;
+}
+
+.looking-text {
+    color: #dc3545;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.buy-car-card:last-child .looking-text {
+    color: #fff;
+}
+
+.buy-car-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.buy-car-text {
+    margin-bottom: 30px;
+    opacity: 0.8;
+}
+
+.search-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border: 2px solid #dc3545;
+    color: #dc3545;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.buy-car-card:last-child .search-btn {
+    border-color: #fff;
+    color: #fff;
+}
+
+.search-btn:hover {
+    background: #dc3545;
+    color: #fff;
+}
+@media (max-width: 768px) {
+    .buy-car-section{
+        height: 100%;
+    }
+    
+}
+
+@media (max-width: 480px) {
+
+}

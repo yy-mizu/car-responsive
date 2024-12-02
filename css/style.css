@@ -1,0 +1,269 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Raleway, sans-serif;
+}
+
+.parent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.main {
+    position: relative;
+    display: block;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../img/slide1.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.main .main-car {
+    position: absolute;
+    right: -100px;
+    bottom: 10px;
+    max-width: 60%;
+    height: auto;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+header nav {
+    display: flex;
+    padding: 1rem;
+}
+
+.social-nav {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.social-nav a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.social-nav div {
+    display: flex;
+    gap: 1rem;
+   
+}
+
+.logo-nav {
+    justify-content: center;
+    align-items: center;
+    gap: 30rem;
+}
+
+.logo-nav img {
+    max-width: 150px;
+    height: auto;
+}
+
+.home-nav {
+    display: flex;
+    justify-content: end;
+}
+
+.home-nav ul {
+    display: flex;
+    list-style: none;
+    /* padding: 10px; */
+    justify-content: space-around;
+    /* width: 100%; */
+    flex-wrap: wrap;
+}
+
+.home-nav li {
+    margin: 5px 10px;
+}
+
+.search-box {
+    width: 100%;
+    max-width: 350px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    margin: 20px auto;
+}
+
+.search-box h2 {
+    color: #d92027;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.toggle-buttons {
+    display: flex;
+    justify-content: space-around;
+    background: #f5f5f5;
+    border-radius: 30px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.toggle-buttons button {
+    flex: 1;
+    background: none;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #666;
+    border-radius: 30px;
+}
+
+.toggle-buttons .active {
+    background: #d92027;
+    color: white;
+}
+
+.radio-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.radio-buttons label {
+    font-size: 14px;
+    color: #d92027;
+}
+
+.select-box {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.select-box select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.search-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: #d92027;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+.search-btn:hover {
+    background: #b01a20;
+}
+
+.advanced-search {
+    font-size: 14px;
+    color: #d92027;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .main .main-car {
+        max-width: 50%;
+    }
+
+    .logo-nav {
+        justify-content: space-between;
+    }
+
+    .home-nav ul {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header nav {
+        padding: 0.5rem;
+    }
+
+    .social-nav {
+        
+        align-items: center;
+    }
+
+    .social-nav div {
+        justify-content: center;
+    }
+
+    .main .main-car {
+        max-width: 70%;
+        right: -50px;
+    }
+
+    .home-nav ul {
+       
+        align-items: center;
+    }
+
+    .home-nav li {
+        margin: 5px 0;
+    }
+
+    .search-box{
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+    .main {
+        padding: 10px;
+    }
+
+    .main .main-car {
+        max-width: 90%;
+        right: -30px;
+    }
+
+    .search-box {
+        padding: 15px;
+        margin-left: 0;
+    }
+
+    .search-box h2 {
+        font-size: 18px;
+    }
+
+    .toggle-buttons button {
+        font-size: 12px;
+    }
+
+    .radio-buttons label {
+        font-size: 12px;
+    }
+
+    .select-box select {
+        font-size: 12px;
+    }
+
+    .search-btn {
+        font-size: 14px;
+    }
+}
